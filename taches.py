@@ -47,6 +47,11 @@ def supprimer_tache():
     else:
         print("Numéro de tâche invalide.")
 
+# la fonction sauvegarder de tache
+def sauvegarder_taches():
+    with open('taches.json', 'w') as f:
+        json.dump(taches, f)
+    print("Tâches sauvegardées.")
 
 
 def main():
