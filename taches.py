@@ -27,6 +27,16 @@ def afficher_taches():
         for idx, tache in enumerate(taches):
             print(f"{idx + 1}. {tache['nom']} - {tache['statut']}")
 
+# la fonction marquer taches (marquer la tache comme terminée )
+def marquer_tache():
+    afficher_taches()
+    num = int(input("Entrez le numéro de la tâche à marquer comme terminée : ")) - 1
+    if 0 <= num < len(taches):
+        taches[num]['statut'] = "terminée"
+        print("Tâche marquée comme terminée.")
+    else:
+        print("Numéro de tâche invalide.")
+
 
 def main():
     while True:
