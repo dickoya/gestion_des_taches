@@ -57,8 +57,8 @@ Fonction : Utilisez le module json pour implémenter une fonction sauvegarder_ta
 Fonction : Utilisez le module json pour implémenter une fonction charger_taches.
 
 # Exigences Techniques
-Langage de programmation : Python 3.x
-Modules : json
+#### Langage de programmation : Python 3.12
+#### Modules : json
 
 ## Conclusion
 Ce cahier des charges définit les fonctionnalités et les étapes nécessaires pour développer un gestionnaire de tâches en ligne de commande. Le projet met en œuvre des fonctionnalités essentielles pour gérer efficacement des tâches et assurer leur persistance via des fichiers JSON.
