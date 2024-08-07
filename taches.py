@@ -19,7 +19,13 @@ def ajouter_tache():
     taches.append({"nom": nom, "statut": "non terminée"})
     print("Tâche ajoutée.")
 
-
+# la fonction d'affichage des taches
+def afficher_taches():
+    if not taches:
+        print("Aucune tâche à afficher.")
+    else:
+        for idx, tache in enumerate(taches):
+            print(f"{idx + 1}. {tache['nom']} - {tache['statut']}")
 
 
 def main():
