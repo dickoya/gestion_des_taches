@@ -13,6 +13,13 @@ def afficher_menu():
     print("6. Charger les tâches")
     print("7. Quitter")
 
+# la fonction d'ajout de tache
+def ajouter_tache():
+    nom = input("Entrez le nom de la tâche : ")
+    taches.append({"nom": nom, "statut": "non terminée"})
+    print("Tâche ajoutée.")
+
+
 
 
 def main():
