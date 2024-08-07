@@ -37,6 +37,17 @@ def marquer_tache():
     else:
         print("Numéro de tâche invalide.")
 
+# la fonction de suppression de tache
+def supprimer_tache():
+    afficher_taches()
+    num = int(input("Entrez le numéro de la tâche à supprimer : ")) - 1
+    if 0 <= num < len(taches):
+        taches.pop(num)
+        print("Tâche supprimée.")
+    else:
+        print("Numéro de tâche invalide.")
+
+
 
 def main():
     while True:
