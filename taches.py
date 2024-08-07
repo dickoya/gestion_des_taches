@@ -53,7 +53,17 @@ def sauvegarder_taches():
         json.dump(taches, f)
     print("Tâches sauvegardées.")
 
+# la fonction sauvegarde de tache
+def charger_taches():
+    global taches
+    try:
+        with open('taches.json', 'r') as f:
+            taches = json.load(f)
+        print("Tâches chargées.")
+    except FileNotFoundError:
+        print("Aucun fichier de sauvegarde trouvé.")
 
+# la fonction main       
 def main():
     while True:
         afficher_menu()
